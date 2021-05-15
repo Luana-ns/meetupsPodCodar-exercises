@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio RainBows</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+        </style>
 </head>
 <body>
     <h1 style="text-align: center;">Desafio da noite</h1>
-    <p style="text-align: center;">Queremos fazer 7 botões, um para cada cor do arco-íris. Ao clicar em cada botão, a cor de fundo deve mudar para a respectiva cor do botão.</p>
+    <h3 style="text-align: center;">Queremos fazer 7 botões, um para cada cor do arco-íris. <br>Ao clicar em cada botão, a cor de fundo deve mudar para a respectiva cor do botão.</h3>
     <div id="containers"></div>
     
 
@@ -27,17 +31,16 @@ function btnColor(color){
 const button = document.createElement("button")
 const divContainer = document.getElementById("containers")
 divContainer.append(button)
-button.style = "width: 100px; height: 25px;"
 button.style.backgroundColor = color
 button.innerText = color
 button.onclick = function (){
     document.body.style.backgroundColor = color
     }
-    return button
+    return button 
 }
 for (let i = 0; i < rainbows.length; i++){
     let color = rainbows[i] 
-    btnColor(color)
+    btnColor(`${color} \n`)
 }
 
 </script>
