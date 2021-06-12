@@ -1,22 +1,20 @@
 @charset "UTF-8";
 
 body{
-    font-family: Nanum Gothic, sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 h1{
     font-weight: bold;
+    background-image: linear-gradient(to right, blue, indigo, purple,red, 
+    orange, yellow, green, blue);
 }
-/* button{
-    display: block;
-    position: relative;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-} */
+
 div{
     width: 500px;
     margin: auto;
 }
+
 button{
   border: 2;
   padding: 50px;

@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio RainBows</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
         </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Desafio da noite</h1>
+    <h1 style="text-align: center;">Desafio 13/05/2021</h1>
     <h3 style="text-align: center;">Queremos fazer 7 botões, um para cada cor do arco-íris. <br>Ao clicar em cada botão, a cor de fundo deve mudar para a respectiva cor do botão.</h3>
     <div id="containers"></div>
-    
-
+ 
 </body>
 <script type ="text/javascript">
 const rainbows = [
-    "red",
-  "orange",
-  "yellow",
-  "green",
-  "blue",
-  "indigo",
-  "purple"
+    "RED",
+  "ORANGE",
+  "YELLOW",
+  "GREEN",
+  "BLUE",
+  "INDIGO",
+  "PURPLE"
 ]
 function btnColor(color){
 const button = document.createElement("button")
@@ -42,7 +42,5 @@ for (let i = 0; i < rainbows.length; i++){
     let color = rainbows[i] 
     btnColor(`${color} \n`)
 }
-
 </script>
 </html>
-
